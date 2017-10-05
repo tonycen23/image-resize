@@ -9,5 +9,5 @@ for filename in os.listdir('images'):
     width_percent = (width/float(image.size[0]))
     height = int((float(image.size[1]) * float(width_percent)))
     image = image.resize((width, height), PIL.Image.ANTIALIAS)
-    image.save('output/%s' % filename.replace(" ", ""))
+    image.save('output/%s' % filename)
     
